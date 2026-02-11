@@ -25,6 +25,11 @@ It also relocates the kernel memory descriptors in case they aren't where they s
 
 ## things i need to pass to uk
 
+### lcpu
+
+there is an lcpu variabe passed to both of my entry options but they are written to and not read from.
+the lcpu type is a cpu descriptor
+
 ### cmdline
 
 Is a string containing args passed to the kernel like `console=ttyS0 mem=256M ukvm.noirq`
