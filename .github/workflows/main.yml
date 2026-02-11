@@ -1,14 +1,14 @@
 name: Documentation
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - "docs/**"
-  repository_dispatch:
-    types: [docs]
-  gollum:
+#  push:
+#    branches:
+#      - master
+#    paths:
+#      - "docs/**"
+#  repository_dispatch:
+#    types: [docs]
+#  gollum:
 
 env:
   GIT_AUTHOR_NAME: Actionbot
