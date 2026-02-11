@@ -10,7 +10,7 @@ This must match the state just before the asm routine `jump_to_entry` jumps into
 - 64‑bit long mode
 - Paging enabled
 - Interrupts disabled
-- Valid stack
+- Valid stack (bootsrap stack, uk will create a boot stack for itself later)
 - RSP 16‑byte aligned (SysV ABI)
 - RIP = `multiboot_entry` or `_ukplat_entry` functions in c
   - if i can populate `bootinfo` and do the work `multiboot_entry` does i can jump straight to `_ukplat_entry`
